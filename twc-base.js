@@ -106,7 +106,11 @@ Generator.prototype.generateModuleFiles = function () {
   this.appTemplate('app.js', path.join(targetDirectory, this.name, this.name+'.app.js'));
   this.appTemplate('controller.js', path.join(targetDirectory, this.name, this.name+'.controller.js'));
   this.appTemplate('module.css', path.join(targetDirectory, this.name, 'css', 'global_'+this.name+'.css'));
+  this.appTemplate('module.css', path.join(targetDirectory, this.name, 'css', 'redcell_'+this.name+'.css'));
+  this.appTemplate('module.css', path.join(targetDirectory, this.name, 'css', 'reboot_'+this.name+'.css'));
   this.appTemplate('module.sass', path.join(targetDirectory, this.name, 'sass', 'global_'+this.name+'.sass'));
+  this.appTemplate('module.sass', path.join(targetDirectory, this.name, 'sass', 'redcell_'+this.name+'.sass'));
+  this.appTemplate('module.sass', path.join(targetDirectory, this.name, 'sass', 'reboot_'+this.name+'.sass'));
   this.appTemplate('module.info', path.join(targetDirectory, this.name, this.name+'.info'));
   this.appTemplate('esi.inc', path.join(targetDirectory, this.name, this.name+'.esi.inc'));
   this.appTemplate('config.rb', path.join(targetDirectory, this.name, 'config.rb'));
